@@ -1,0 +1,27 @@
+{
+  "name": "dev_radio_lag",
+  "version": "1.0.0",
+  "description": "Radio LAG website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lagradio/radio-LAG.git"
+  },
+  "keywords": [
+    "Angular 2",
+    "Application"
+  ],
+  "author": "Anastasiia Kostiv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lagradio/radio-LAG/issues"
+  },
+  "homepage": "https://github.com/lagradio/radio-LAG#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "firebase": "^5.8.2"
+  }
+}
