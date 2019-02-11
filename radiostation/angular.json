@@ -20,12 +20,48 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/fonts",
+              "src/assets/fonts/bigmug-line/fl-bigmug-line.eot",
+              "src/assets/fonts/bigmug-line/fl-bigmug-line.svg",
+              "src/assets/fonts/bigmug-line/fl-bigmug-line.ttf",
+              "src/assets/fonts/bigmug-line/fl-bigmug-line.woff"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/bootstrap/bootstrap-grid.css",
+              "src/styles//bootstrap/bootstrap-reboot.css",
+              "src/styles/animate.css",
+              "src/styles/aos.css",
+              "src/styles/bootstrap.min.css",
+              "src/styles/bootstrap-datepicker.css",
+              "src/styles/jquery-ui.css",
+              "src/styles/magnific-popup.css",
+              "src/styles/mediaelementplayer.css",
+              "src/styles/owl.carousel.min.css",
+              "src/styles/owl.theme.default.min.css",
+              "src/styles/progress-bar.css",
+              "src/styles/style.css"
+//              "src/styles/fi-bigmug-line.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/scripts/jquery-3.3.1.min.js",
+              "src/scripts/jquery-migrate-3.0.1.min.js",
+              "src/scripts/jquery-ui.js",
+              "src/scripts/popper.min.js",
+              "src/scripts/bootstrap.min.js",
+              "src/scripts/owl.carousel.min.js",
+              "src/scripts/mediaelement-and-player.min.js",
+              "src/scripts/jquery.stellar.min.js",
+              "src/scripts/jquery.countdown.min.js",
+              "src/scripts/jquery.magnific-popup.min.js",
+              "src/scripts/bootstrap-datepicker.min.js",
+              "src/scripts/aos.js",
+              "src/scripts/circleaudioplayer.js",
+              "src/scripts/main.js",
+              "src/scripts/player.js",
+              "src/scripts/slick.min.js"
+
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
