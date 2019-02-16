@@ -11,7 +11,8 @@ const routes: Routes = [
   {path: 'team', component: TeamComponent},
   {path: 'news', component: NewsComponent},
   {path: 'programs', component: ProgramsComponent},
-  {path: 'contacts', component: ContactsComponent}
+  {path: 'contacts', component: ContactsComponent},
+  {path: '**', component: HomeComponent}
   // {path: '**', component: PageNotFound}
 ];
 

@@ -35,9 +35,9 @@
 
 // settings
 var DEFAULTS = {
-	borderColor: "#7cbd1e",
+	borderColor: "#de9000",
 	playedColor: "#ffffff",
-	backgroundColor: "rgba(124,189,30,.2)",
+	backgroundColor: "rgba(222,144,0,.2)",
 	iconColor: "#ffffff",
 	borderWidth: 2,
 	size: 48,
@@ -302,4 +302,4 @@ var cap = new CircleAudioPlayer({
   size: 120,
   borderWidth: 4
 });
-cap.appendTo(playerContainer);
+// cap.appendTo(playerContainer);

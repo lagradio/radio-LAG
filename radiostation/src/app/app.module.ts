@@ -11,6 +11,8 @@ import { NewsComponent } from './components/news/news.component';
 import { ProgramsComponent } from './components/programs/programs.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SafePipePipe } from './pipes/safe-pipe.pipe';
+import { PagerService } from './services/index';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NewsComponent,
     ProgramsComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    SafePipePipe
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [PagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

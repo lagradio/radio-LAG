@@ -1,0 +1,18 @@
+.site-block-27 ul li a, .site-block-27 ul li span {
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 32% !important;
+   border: 0px solid transparent !important;
+  color: grey !important;
+  cursor: pointer;
+  font-weight: bolder;
+
+}
+
+
+.site-block-27 ul li.active a, .site-block-27 ul li.active span{
+  color: #fff !important;
+}

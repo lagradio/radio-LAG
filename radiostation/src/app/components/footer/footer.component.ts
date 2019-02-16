@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from '../../../scripts/aos.js';
 
 @Component({
   selector: 'app-footer',
@@ -10,6 +11,8 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // Initialize AOS library
+    AOS.init();
   }
 
 }

@@ -1,70 +1,71 @@
-<div class="site-mobile-menu">
-  <div class="site-mobile-menu-header">
-    <div class="site-mobile-menu-close mt-3">
-      <span class="icon-close2 js-menu-toggle"></span>
-    </div>
-  </div>
-  <div class="site-mobile-menu-body"></div>
-</div> <!-- .site-mobile-menu -->
 
-<div class="site-blocks-cover overlay" [style.background-image]="backgroundImg" [attr.data-aos]="fade" [attr.data-stellar-background-ratio]="0.5" [attr.data-aos]="fade">
+<!-- Background Image & Audio player -->
+
+<div class="site-blocks-cover overlay" [style.background-image]="backgroundImg" data-aos="fade" data-stellar-background-ratio="0.5" data-aos="fade">
   <div class="container">
     <div class="row align-items-center justify-content-center">
-      <div class="col-md-7 text-center" [attr.data-aos]="fade-up" [attr.data-aos-delay]="400">
+      <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
         <h1>Listen &mdash; On-Air Now</h1>
         <p class="mb-4"><span class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
 
-        <!--<div id="playerContainer"></div>-->
+        <div id="playerContainer"></div>
 
       </div>
     </div>
   </div>
 </div>
 
+<!--/end image top-->
 
 
 
 
-
+<!--Programs schedule or popular as you want-->
 
 <div class="pb-5" style="margin-top: -100px;">
   <div class="container-fluid">
-
     <div class="row no-gutters">
-      <div class="col-md-6 col-lg-3" [attr.data-aos]="fade-up" [attr.data-aos-delay]="100">
+
+      <!--First program-->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
         <a href="#" class="unit-9">
           <div class="image" [style.background-image]="firstImgCard"></div>
           <div class="unit-9-content">
-            <h2>Art Gossip</h2>
-            <span>Friday 1:00pm &mdash; 2:30pm</span>
+            <h2>Назва програми</h2>
+            <span>День 13:00 &mdash; 13:30</span>
           </div>
         </a>
       </div>
 
-      <div class="col-md-6 col-lg-3" [attr.data-aos]="fade-up" [attr.data-aos-delay]="200">
+      <!--Second program-->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
         <a href="#" class="unit-9">
           <div class="image" [style.background-image]="secondImgCard"></div>
           <div class="unit-9-content">
-            <h2>Good Morning Show</h2>
-            <span>Friday 1:00pm &mdash; 2:30pm</span>
+            <h2>Назва</h2>
+            <span>День час &mdash; час</span>
           </div>
         </a>
       </div>
-      <div class="col-md-6 col-lg-3" [attr.data-aos]="fade-up" [attr.data-aos-delay]="300">
+
+      <!--Third program-->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
         <a href="#" class="unit-9">
           <div class="image" [style.background-image]="thirdImgCard"></div>
           <div class="unit-9-content">
-            <h2>Blues Radio</h2>
-            <span>Friday 1:00pm &mdash; 2:30pm</span>
+            <h2>Назва програми</h2>
+            <span>День 12:00 &mdash; 12:20</span>
           </div>
         </a>
       </div>
-      <div class="col-md-6 col-lg-3" [attr.data-aos]="fade-up" [attr.data-aos-delay]="400">
+
+      <!--Fourth program-->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
         <a href="#" class="unit-9">
           <div class="image" [style.background-image]="fourthImgCard"></div>
           <div class="unit-9-content">
-            <h2>Classic Songs</h2>
-            <span>Friday 1:00pm &mdash; 2:30pm</span>
+            <h2>Назва </h2>
+            <span>День 08:00 &mdash; 09:20</span>
           </div>
         </a>
       </div>
@@ -72,81 +73,89 @@
   </div>
 </div>
 
+<!--/end programs-->
 
 
-
-
+<!--Opinion about us-->
 
 <div class="site-section bg-light block-13">
-  <div class="container" [attr.data-aos]="fade-up">
+  <div class="container" data-aos="fade-up">
     <div class="row">
       <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-        <h2 class="mb-5">Love By Our Listeners</h2>
+        <h2 class="mb-5">Наші слухачі про нас</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
       </div>
     </div>
+
+
     <div class="nonloop-block-13 owl-carousel">
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">
-          <img src="../../../assets/configImages/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img [src]="firstPerson | safePipe" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="">
-          <h3 class="font-weight-light h5">Megan Smith</h3>
+          <h3 class="font-weight-light h5">Name Surname</h3>
           <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
         </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">
-          <img src="../../../assets/configImages/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img [src]="secondPerson | safePipe" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="">
-          <h3 class="font-weight-light h5">Brooke Cagle</h3>
+          <h3 class="font-weight-light h5">Name Surname</h3>
           <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
         </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">
-          <img src="../../../assets/configImages/person_3.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img [src]="thirdPerson | safePipe" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="">
-          <h3 class="font-weight-light h5">Philip Martin</h3>
+          <h3 class="font-weight-light h5">Name Surname</h3>
           <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
         </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">
-          <img src="../../../assets/configImages/person_1.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img [src]="fourthPerson | safePipe" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="">
-          <h3 class="font-weight-light h5">Steven Ericson</h3>
+          <h3 class="font-weight-light h5">Name Surname</h3>
           <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
         </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">
-          <img src="../../../assets/configImages/person_2.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img [src]="fifthPerson" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="">
-          <h3 class="font-weight-light h5">Nathan Dumlao</h3>
+          <h3 class="font-weight-light h5">Name Surname</h3>
           <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
         </div>
       </div>
 
       <div class="text-center p-3 p-md-5 bg-white">
         <div class="mb-4">
-          <img src="../../../assets/configImages/person_4.jpg" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
+          <img [src]="sixthPerson | safePipe" alt="Image" class="w-50 mx-auto img-fluid rounded-circle">
         </div>
         <div class="">
-          <h3 class="font-weight-light h5">Brook Smith</h3>
+          <h3 class="font-weight-light h5">Name Surname</h3>
           <p class="font-italic">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto. Aliquam illo, cum sed ea? Ducimus quos, ea?&rdquo;</p>
         </div>
       </div>
+
+
 
     </div>
   </div>
 </div>
+
+<!--/end opinions-->
+
+
