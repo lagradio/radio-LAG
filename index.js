@@ -26,11 +26,11 @@ connectedRef.on("value", function(snap) {
 
 
 // Provide static directory for frontend
-app.use(express.static(__dirname + '/radiostation/dist/'));
+app.use(express.static(__dirname + '/radiostation/dist/radiostation/'));
 
 // Connect server to Angular 2 Index.html
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/radiostation/dist/index.html'));
+    res.sendFile(path.join(__dirname + '/radiostation/dist/radiostation/index.html'));
 });
 
 // Start Server: Listen on port 8080
