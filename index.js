@@ -10,7 +10,7 @@ const app = express();
 const firebase = require('firebase');
 const config = require('./config/database');
 const path = require('path');
-
+const port = process.env.PORT || 8080;
 
 // Database Connection
 firebase.initializeApp(config);
@@ -34,6 +34,6 @@ app.get('*', (req, res) => {
 });
 
 // Start Server: Listen on port 8080
-app.listen(8080, () => {
-    console.log('Listening on port 8080');
+app.listen(port, () => {
+    console.log('Listening on port' + port);
 });
