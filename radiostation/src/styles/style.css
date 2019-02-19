@@ -1813,3 +1813,9 @@ thead{
 tbody{
   color: orange;
 }
+
+
+
+.moodal-link-color a{
+  color: #de9000 !important;
+}
