@@ -1,5 +1,8 @@
 import { Component, OnInit, AfterViewInit, ElementRef, NgZone  } from '@angular/core';
 import { BrowserModule, DomSanitizer, SafeStyle } from '@angular/platform-browser';
+import { AuthService } from '../../services/auth.service';
+import { CardsService } from '../../services/cards.service';
+
 
 import '../../../scripts/circleaudioplayer.js';
 declare var cap: any;
@@ -34,10 +37,14 @@ export class HomeComponent implements AfterViewInit {
   fifthPerson;
   sixthPerson;
 
+  cardPosts;
+
   constructor(
     private sanitizer:DomSanitizer,
     private zone: NgZone,
-    private elRef: ElementRef
+    private elRef: ElementRef,
+    private authService: AuthService,
+    private cardsService: CardsService
 
   ) {
     // top background image
@@ -56,6 +63,17 @@ export class HomeComponent implements AfterViewInit {
     this.sixthPerson = '/assets/configImages/PeopleOrOpinions/person_5.jpg';
 
   }
+
+
+
+  // Function to get all blogs from the database
+  getAllCards() {
+    // Function to GET all blogs from database
+    this.cardsService.getAllCards().subscribe(data => {
+      this.cardPosts = data.cards; // Assign array to use in HTML
+    });
+  }
+
 
 
   ngAfterViewInit() {
@@ -133,6 +151,8 @@ export class HomeComponent implements AfterViewInit {
       }
     // end carousel
 
+    // get top cards
+    this.getAllCards();
 
 
   }

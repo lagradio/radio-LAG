@@ -27,12 +27,12 @@
     <div class="row no-gutters">
 
       <!--First program-->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100" >
         <a href="#" class="unit-9">
           <div class="image" [style.background-image]="firstImgCard"></div>
-          <div class="unit-9-content">
-            <h2>Назва програми</h2>
-            <span>День 13:00 &mdash; 13:30</span>
+          <div class="unit-9-content" *ngFor="let card of cardPosts">
+            <h2>{{card.firstCardTitle}}</h2>
+            <span>{{ card.firstCardTime }}</span>
           </div>
         </a>
       </div>
@@ -41,9 +41,9 @@
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
         <a href="#" class="unit-9">
           <div class="image" [style.background-image]="secondImgCard"></div>
-          <div class="unit-9-content">
-            <h2>Назва</h2>
-            <span>День час &mdash; час</span>
+          <div class="unit-9-content" *ngFor="let card of cardPosts">
+            <h2>{{ card.secondCardTitle}}</h2>
+            <span>{{ card.secondCardTime }}</span>
           </div>
         </a>
       </div>
@@ -52,9 +52,9 @@
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
         <a href="#" class="unit-9">
           <div class="image" [style.background-image]="thirdImgCard"></div>
-          <div class="unit-9-content">
-            <h2>Назва програми</h2>
-            <span>День 12:00 &mdash; 12:20</span>
+          <div class="unit-9-content" *ngFor="let card of cardPosts">
+            <h2>{{ card.thirdCardTitle }}</h2>
+            <span>{{ card.thirdCardTime }}</span>
           </div>
         </a>
       </div>
@@ -63,9 +63,9 @@
       <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
         <a href="#" class="unit-9">
           <div class="image" [style.background-image]="fourthImgCard"></div>
-          <div class="unit-9-content">
-            <h2>Назва </h2>
-            <span>День 08:00 &mdash; 09:20</span>
+          <div class="unit-9-content" *ngFor="let card of cardPosts">
+            <h2>{{ card.fourthCardTitle }}</h2>
+            <span>{{ card.fourthCardTime }}</span>
           </div>
         </a>
       </div>

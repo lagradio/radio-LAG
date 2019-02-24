@@ -11,8 +11,11 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const config = require('./config/database');
 const path = require('path');
+const cards = require('./routes/cards')(router);
+const tables = require('./routes/tables')(router);
 const authentication = require('./routes/authentication')(router);
 const bodyParser = require('body-parser');
+const cors = require('cors'); // CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 const port = process.env.PORT || 8080;
 
 
@@ -28,11 +31,15 @@ mongoose.connect(config.uri, (err) => {
 
 
 // Middleware
+app.use(cors({ origin: 'http://localhost:4200' }));
 app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()); // parse application/json
+
 // Provide static directory for frontend
 app.use(express.static(__dirname + '/public/'));
 app.use('/authentication', authentication);
+app.use('/cards', cards);
+app.use('/tables', tables);
 
 // Connect server to Angular 2 Index.html
 app.get('*', (req, res) => {

@@ -12,7 +12,7 @@ let emailLengthChecker = (email) => {
     if (!email) {
         return false;
     } else {
-        if (email.length < 5 || email.length > 30) {
+        if (email.length < 5 || email.length > 50) {
             return false;
         } else {
             return true;
@@ -34,7 +34,7 @@ let validEmailChecker = (email) => {
 const emailValidators = [
     {
         validator: emailLengthChecker,
-        message: 'E-mail must be at least 5 characters but no more than 30'
+        message: 'E-mail must be at least 5 characters but no more than 50'
     },
     {
         validator: validEmailChecker,
@@ -137,7 +137,7 @@ userSchema.pre('save', function(next) {
 });
 
 // Methods to compare password to encrypted password upon login
-userSchema.methods.comparePassword = (password) => {
+userSchema.methods.comparePassword = function(password) {
     return bcrypt.compareSync(password, this.password); // Return comparison of login password to password in database (true or false)
 };
 

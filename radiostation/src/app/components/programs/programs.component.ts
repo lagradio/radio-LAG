@@ -1,5 +1,8 @@
 import { Component, OnInit, AfterViewInit, ElementRef, NgZone } from '@angular/core';
 import { BrowserModule, DomSanitizer, SafeStyle } from '@angular/platform-browser';
+import { AuthService } from '../../services/auth.service';
+import { TableService } from '../../services/table.service';
+
 import * as AOS from '../../../scripts/aos.js';
 
 @Component({
@@ -16,11 +19,15 @@ export class ProgramsComponent implements AfterViewInit {
   thirdProgramImgCard;
   fourthProgramImgCard;
 
+  tablePosts;
+
 
   constructor(
     private sanitizer:DomSanitizer,
     private zone: NgZone,
-    private elRef: ElementRef
+    private elRef: ElementRef,
+    private authService: AuthService,
+    private tableService: TableService
   ) {
 
     // top background image
@@ -32,9 +39,25 @@ export class ProgramsComponent implements AfterViewInit {
     this.fourthProgramImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/img_4.jpg")');
   }
 
+
+  // Function to get all blogs from the database
+  getAllTables() {
+    // Function to GET all blogs from database
+    this.tableService.getAllTables().subscribe(data => {
+      this.tablePosts = data.tables; // Assign array to use in HTML
+    });
+  }
+
   ngAfterViewInit() {
     // Initialize AOS library
     AOS.init();
+
+
+
+    // get table
+    this.getAllTables();
+
+
   }
 
 }

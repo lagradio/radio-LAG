@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +13,15 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SafePipePipe } from './pipes/safe-pipe.pipe';
 import { PagerService } from './services/index';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { AuthService } from './services/auth.service';
+import { FlashMessagesModule } from 'angular2-flash-messages';
+import { AuthGuard } from './guards/auth.guard';
+import { NotAuthGuard } from './guards/notAuth.guard';
+import { CardsService } from './services/cards.service';
+import { TableService } from './services/table.service';
+
 
 @NgModule({
   declarations: [
@@ -24,15 +33,18 @@ import { PagerService } from './services/index';
     ProgramsComponent,
     ContactsComponent,
     FooterComponent,
-    SafePipePipe
+    SafePipePipe,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpModule
+    HttpModule,
+    ReactiveFormsModule,
+    FlashMessagesModule
   ],
-  providers: [PagerService],
+  providers: [PagerService, AuthService, AuthGuard, NotAuthGuard, CardsService, TableService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
