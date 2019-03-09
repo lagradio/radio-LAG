@@ -1,0 +1,56 @@
+
+#accordionExample{
+  margin: 0px 170px 110px 170px;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  #accordionExample{
+    margin: 70px 100px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #accordionExample{
+    margin: 70px 10px;
+  }
+}
+
+.card {
+   border: 0px solid rgba(0, 0, 0, 0.125) !important;
+   border-radius: 0rem !important;
+}
+
+
+.card-header {
+   padding: 0.75rem 1.25rem 0.75rem 0.15rem;
+   background-color: transparent !important;
+   border-bottom: 0px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.card-body {
+  padding: 1.25rem 1.25rem 1.25rem 5.5rem !important;
+}
+
+.link-color-evol.collapsed{
+  font-weight: bold;
+  color: #876119 !important;
+  font-size: larger;
+  text-decoration: none !important;
+}
+
+.link-color-evol{
+  color: #de9000 !important;
+  font-weight: bold;
+  text-decoration: none !important;
+  font-size: xx-large;
+}
+
+.link-color-evol:hover{
+  cursor: pointer;
+}
+
+
+.evol-title{
+  margin-top: 6.25rem;
+}

@@ -23,7 +23,6 @@
         <h2 class="mb-5">Weekly Radio Program</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>
       </div>
-
     </div>
 
     <div class="site-block-retro d-block d-md-flex">
@@ -102,95 +101,96 @@
 
 
 
-<!--table-->
-
-<!--<footer class="site-footer">-->
-  <!--<div class="container">-->
-    <!--<div class="row">-->
-      <!--<div class="col-xs-12">-->
-        <!--<div class="row">-->
-          <!--<div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">-->
-            <!--<h2 class="mb-5">Розклад програм</h2>-->
-            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque deserunt officia, error reiciendis ab quod?</p>-->
-          <!--</div>-->
-        <!--</div>-->
-
-        <!--<table style="width:100%; border: 1px solid white;">-->
-          <!--<tr>-->
-
-            <!--<th><strong></strong></th>-->
-            <!--<th><strong>ПОНЕДІЛОК</strong></th>-->
-            <!--<th><strong>ВІВТОРОК</strong></th>-->
-            <!--<th><strong>СЕРЕДА</strong></th>-->
-            <!--<th><strong>ЧЕТВЕР</strong></th>-->
-            <!--<th><strong>П'ЯТНИЦЯ</strong></th>-->
-          <!--</tr>-->
-          <!--<tr>-->
-            <!--<td>8:00 - 8:30</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$100</td>-->
-          <!--</tr>-->
-          <!--<tr>-->
-            <!--<td>9:15 - 9:25</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-          <!--</tr>-->
-          <!--<tr>-->
-            <!--<td>10:10 - 10:20</td>-->
-            <!--<td>$100</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-          <!--</tr>-->
-          <!--<tr>-->
-            <!--<td>11:05 - 11:25</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-          <!--</tr>-->
-          <!--<tr>-->
-            <!--<td>12:10 - 12:25</td>-->
-            <!--<td>$100</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-          <!--</tr>-->
-          <!--<tr>-->
-            <!--<td>13:10 - 13:25</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-          <!--</tr>-->
-          <!--<tr>-->
-            <!--<td>14:10 - 14:20</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-            <!--<td>$50</td>-->
-          <!--</tr>-->
-        <!--</table>-->
 
 
-      <!--</div>-->
+<!--program table-->
+<footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
+        <h2 class="mb-5">Розклад ефірів</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container tableOverflow">
+
+    <table data-aos="fade-up" class="table table-bordered" style="width:100% !important;">
+      <thead>
+      <tr>
+        <th style="text-align: center;"><i class="fas fa-headphones-alt" style="color: white; font-size: 25px; text-align: center;"></i></th>
+        <th>ПОНЕДІЛОК</th>
+        <th>ВІВТОРОК</th>
+        <th>СЕРЕДА</th>
+        <th>ЧЕТВЕР</th>
+        <th>П'ЯТНИЦЯ</th>
+      </tr>
+      </thead>
+      <tbody *ngFor="let table of tablePosts">
+      <tr>
+        <!--08:00 - 08:25-->
+        <td>08:00 - 08:25</td>
+        <td>{{table.Monday_1}}</td>
+        <td>{{table.Tuesday_1}}</td>
+        <td>{{table.Wednesday_1}}</td>
+        <td>{{table.Thursday_1}}</td>
+        <td>{{table.Friday_1}}</td>
+
+      </tr>
+      <tr>
+        <td>09:20 - 09:25</td>
+        <td>{{table.Monday_2}}</td>
+        <td>{{table.Tuesday_2}}</td>
+        <td>{{table.Wednesday_2}}</td>
+        <td>{{table.Thursday_2}}</td>
+        <td>{{table.Friday_2}}</td>
+      </tr>
+      <tr>
+        <td>10:10 - 10:20</td>
+        <td>{{table.Monday_3}}</td>
+        <td>{{table.Tuesday_3}}</td>
+        <td>{{table.Wednesday_3}}</td>
+        <td>{{table.Thursday_3}}</td>
+        <td>{{table.Friday_3}}</td>
+      </tr>
+      <tr>
+        <td>11:10 - 11:20</td>
+        <td>{{table.Monday_4}}</td>
+        <td>{{table.Tuesday_4}}</td>
+        <td>{{table.Wednesday_4}}</td>
+        <td>{{table.Thursday_4}}</td>
+        <td>{{table.Friday_4}}</td>
+      </tr>
+      <tr>
+        <td>12:15 - 12:25</td>
+        <td>{{table.Monday_5}}</td>
+        <td>{{table.Tuesday_5}}</td>
+        <td>{{table.Wednesday_5}}</td>
+        <td>{{table.Thursday_5}}</td>
+        <td>{{table.Friday_5}}</td>
+      </tr>
+      <tr>
+        <td>13:10 - 13:20</td>
+        <td>{{table.Monday_6}}</td>
+        <td>{{table.Tuesday_6}}</td>
+        <td>{{table.Wednesday_6}}</td>
+        <td>{{table.Thursday_6}}</td>
+        <td>{{table.Friday_6}}</td>
+      </tr>
+      <tr>
+        <td>14:10 - 14:20</td>
+        <td>{{table.Monday_7}}</td>
+        <td>{{table.Tuesday_7}}</td>
+        <td>{{table.Wednesday_7}}</td>
+        <td>{{table.Thursday_7}}</td>
+        <td>{{table.Friday_7}}</td>
+      </tr>
+
+      </tbody>
+    </table>
 
 
 
-
-    <!--</div>-->
-
-
-  <!--</div>-->
-<!--</footer>-->
+  </div>
+</footer>

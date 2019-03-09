@@ -13,7 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "public",
+=======
+            "outputPath": "../public",
+>>>>>>> f0082580172788fdcf1cd5473920f32d3b13da83
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",

@@ -12,13 +12,16 @@
             <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><i class="fas fa-bars iconsSize"></i></a></div>
 
             <ul class="site-menu js-clone-nav d-none d-lg-block">
-              <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" class="active">
+              <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a routerLink="/">ГОЛОВНА</a>
               </li>
               <li [routerLinkActive]="['active']"><a routerLink="/team">КОМАНДА</a></li>
               <li [routerLinkActive]="['active']"><a routerLink="/news">НОВИНИ</a></li>
               <li [routerLinkActive]="['active']"><a routerLink="/programs">ЕФІРИ</a></li>
               <li [routerLinkActive]="['active']"><a routerLink="/contacts">КОНТАКТИ</a></li>
+              <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']"><a routerLink="/register">REGISTER</a></li>
+              <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']"><a class="logcursor" (click)="onLogoutClick()">LOGOUT</a></li>
+
             </ul>
           </nav>
         </div>

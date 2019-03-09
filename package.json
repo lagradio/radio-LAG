@@ -23,7 +23,13 @@
   },
   "homepage": "https://github.com/lagradio/radio-LAG#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
-    "firebase": "^5.8.2"
+    "firebase": "^5.8.2",
+    "firebase-admin": "^7.0.0",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.4.14"
   }
 }
