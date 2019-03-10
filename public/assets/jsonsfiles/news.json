@@ -1,34 +1,5 @@
 [
   {
-    "ID": "card-009",
-    "time": "01.03.2019",
-    "title":"Заголовок",
-    "description": "Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla Bla bla bla ",
-    "mainPhoto": "imageMain002.png",
-    "fone": "heartdes.jpg",
-    "ftwo": "slider009.jpg",
-    "fthree": "slider0092.jpg",
-    "ffour": "summer123.jpg",
-    "ffive": "test093.jpg",
-    "videoIframeURL":"https://www.youtube.com/embed/KXdUNp_9oHs",
-    "urlText": "Geography",
-    "urlPath": "https://en.wikipedia.org/wiki/Geography"
-  },
-  {
-    "ID": "card-008",
-    "time": "24.02.2019",
-    "title":"Test-8",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id libero finibus, lacinia dui ullamcorper, ullamcorper ex. Quisque vitae metus felis. Integer at ante eu turpis rhoncus venenatis. Vivamus sapien enim,  sollicitudin ac ipsum in, lacinia consectetur velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id libero finibus, lacinia dui ullamcorper, ullamcorper ex. Quisque vitae metus felis. Integer at ante eu turpis rhoncus venenatis. Vivamus sapien enim,  sollicitudin ac ipsum in, lacinia consectetur velit.",
-    "mainPhoto": "img_3.jpg",
-    "fone": "dog.jpg",
-    "ftwo": "dog.jpg",
-    "fthree": "dog.jpg",
-    "ffour": "beach.jpg",
-    "videoIframeURL":"https://www.youtube.com/embed/UTj4vSZI1RY",
-    "urlText": "Test-link",
-    "urlPath": "https://www.tensorflow.org/guide/datasets"
-  },
-  {
     "ID": "card-007",
     "time": "23.02.2019",
     "title":"Test7",
