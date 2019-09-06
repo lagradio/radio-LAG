@@ -33,9 +33,9 @@ export class ProgramsComponent implements AfterViewInit {
     // top background image
     this.backgroundImg = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/hero_bg_3.jpeg")');
     // programs schedule images or popular
-    this.firstProgramImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/img_1.jpg")');
-    this.secondProgramImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/img_2.jpg")');
-    this.thirdProgramImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/img_3.jpg")');
+    this.firstProgramImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/DanceCardThree.jpeg")');
+    this.secondProgramImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/historyCardTwo.jpeg")');
+    this.thirdProgramImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/newspaperCardFour.jpeg")');
     this.fourthProgramImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/img_4.jpg")');
   }
 
