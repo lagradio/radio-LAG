@@ -55,7 +55,7 @@ export class HomeComponent implements AfterViewInit {
     this.thirdImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/DanceCardThree.jpeg")');
     this.fourthImgCard = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/newspaperCardFour.jpeg")');
     // Faces images
-    this.firstPerson = '/assets/configImages/PeopleOrOpinions/person_1.jpeg';
+    this.firstPerson = '/assets/configImages/PeopleOrOpinions/person_1.jpg';
     this.secondPerson = '/assets/configImages/PeopleOrOpinions/person_2.jpg';
     this.thirdPerson = '/assets/configImages/PeopleOrOpinions/person_3.jpg';
     this.fourthPerson = '/assets/configImages/PeopleOrOpinions/person_6.jpg';
