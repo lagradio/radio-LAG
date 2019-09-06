@@ -17,6 +17,7 @@ export class TeamComponent implements AfterViewInit {
   fourthMember;
   fifthMember;
   sixthMember;
+  sevenMember;
 
   constructor(
     private sanitizer:DomSanitizer,
@@ -27,11 +28,12 @@ export class TeamComponent implements AfterViewInit {
     this.backgroundImg = sanitizer.bypassSecurityTrustStyle('url("../../../assets/configImages/hero_bg_3.jpeg")');
     // TeamMembers images
     this.firstMember = '/assets/configImages/Teammembers/person_1.jpeg';
-    this.secondMember = '/assets/configImages/Teammembers/person_2.jpg';
+    this.secondMember = '/assets/configImages/Teammembers/person_2.jpeg';
     this.thirdMember = '/assets/configImages/Teammembers/person_3.jpg';
     this.fourthMember = '/assets/configImages/Teammembers/person_6.jpg';
     this.fifthMember = '/assets/configImages/Teammembers/person_4.jpg';
     this.sixthMember = '/assets/configImages/Teammembers/person_5.jpg';
+    this.sevenMember = '/assets/configImages/Teammembers/person_7.jpg';
   }
 
   ngAfterViewInit() {
